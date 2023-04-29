@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./static/font/Roboto-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: "Roboto-Regular";
+}
+
+.container {
+    display: flex;
+    width: 650px;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    border: 1px solid black;
+    color: white;
+    align-items: center;
+    padding: 20px 0px 20px 20px ;
+}
+
+.item:nth-child(1) {
+    background-color: black;
+}
+
+.arrow::after {
+    content:'\f104';
+    font-family:"Font Awesome 5 Free"; /*폰트어썸 fas, far 글꼴 연결*/
+    font-weight: 600; /*폰트어썸 굵기 Solid Style(fas) 600필수*/
+    margin-left: 10px;
+    margin-right: 250px;
+}
+
+
+.item:nth-child(2) {
+    background-color: #121212;
+    font-size: 20px;
+    padding: 5px 0px 5px 20px ;
+}
+
+.item:nth-child(2) img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.ellipsis::after {
+    content:'\f141';
+    font-family:"Font Awesome 5 Free"; /*폰트어썸 fas, far 글꼴 연결*/
+    font-weight: 600; /*폰트어썸 굵기 Solid Style(fas) 600필수*/
+    margin-left: 320px;
+}
+
+.item:nth-child(3) {
+    padding: 0px 0px 0px 0px ;
+}
+
+.item:nth-child(3) img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.item:nth-child(4) {
+    background-color: black;
+    justify-content: space-around;
+
+}
+
+.bookmark::after {
+    content:'\f02e';
+    font-family:"Font Awesome 5 Free"; /*폰트어썸 fas, far 글꼴 연결*/
+    font-weight:200; /*폰트어썸 굵기 Solid Style(fas) 600필수*/
+    margin-left: 420px;
+    margin-right: 20px;
+}
+
+.item:nth-child(5) {
+    padding: 0px 0px 0px 20px ;
+    background-color: black;
+}
+
+.item:nth-child(6) {
+    background-color: black;
+    font-size: x-small;
+    color: #A8A8A8;
+    padding: 0px 0px 80px 15px ;
+}
+
+.item:nth-child(7) {
+    color: black;
+    border-top: thin solid #212121;
+    background-color: black;
+}
+
+.item:nth-child(8) {
+    background-color: black;
+    border-top: thin solid #212121;
+    justify-content: space-around;
+}
+
+.item:nth-child(8) img{
+    width: 40px;
+    height: 40px;
+}
